@@ -1,7 +1,7 @@
 ANSIBLE-ROLE-RUBY
 =================
 
-Ansible role install Python3-apt language
+Ansible role install Python3-apt
 
 
 ## Howto use this role?

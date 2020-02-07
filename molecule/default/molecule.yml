@@ -29,19 +29,15 @@ scenario:
     - destroy
     - dependency
     - create
-    - prepare
   converge_sequence:
     - destroy
     - dependency
     - create
-    - prepare
     - converge
   destroy_sequence:
     - destroy
   test_sequence:
-    - lint
     - create
-    - prepare
     - converge
     - verify
     - destroy
