@@ -1,0 +1,7 @@
+---
+- name: "{{ ansible_distribution | lower }} | {{ ansible_distribution_release }} - Install Python3-apt"
+  package:
+    name: "{{ python3-apt_packages }}"
+  register: python3-apt_install_python3-apt
+  until: python3-apt_install_python3-apt is succeeded
+  retries: 3
